@@ -15,7 +15,6 @@ RUN docker-php-ext-install -j$(nproc) gd \
 
 # Get Composer
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
-RUN composer install
 
 # Clean up apt cache
 RUN rm -rf /var/lib/apt/lists/*
