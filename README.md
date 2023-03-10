@@ -1,4 +1,4 @@
-# PHP Docker Base
+# Docker-PHP-NGINX
  Just a simple place to run PHP things.
 
  This is a dockerized environment with PHP running on NGINX. PHP comes installed with Composer so it should work with namespaces out of the box.
