@@ -1,9 +1,19 @@
 <?php
 namespace Home;
 
+use \Psr\Container\ContainerInterface;
+
 class IndexTest
 {
-    public function getPHPInfo()
+    private ContainerInterface $container;
+
+    public function __construct(ContainerInterface $container)
+    {
+        //do something with container
+        $this->container = $container;
+    }
+
+    public function getPHPInfo(): void
     {
         phpinfo();
     }
